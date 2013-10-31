@@ -15,5 +15,6 @@ platforms :mri_18 do
   gem "ruby18_source_location"
 end
 
+gem 'therubyracer'
 gem 'slim'
 gem 'less'
