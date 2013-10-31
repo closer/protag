@@ -1,8 +1,71 @@
----
-title: Welcome to Middleman
----
+header.navbar.navbar-fixed-top role="banner"
+  .container
+    .navbar-header
+      = link_to "#top", class: "navbar-brand" do
+        span.circle Circle
+        span.wave Wave
+    nav.collapse.navbar-collapse role="navigation"
+      ul.nav.navbar-nav
+        li = link_to "CircleWaveとは?", "#about"
+        li = link_to "仲間を集めよう", "#friends"
+        li = link_to "イベントを開催しよう", "#event"
+        li = link_to "はじめよう", "#gettingstart"
 
-div class="welcome"
-  h1 hoge
-  p class="doc"
-    = link_to "Read Online Documentation", "http://middlemanapp.com/"
+#wrap
+
+  .content#top
+    .container
+      h1.logo =image_tag 'top/logo-large.png'
+
+  .content#about
+    .container
+      h2 CircleWave とは？
+      p.lead
+        | CircleWave は、大学の枠をこえて、ウェブ上でサークル活動を運営できるサービスです。
+      .row
+        .col-4.col-md-4
+          .image
+            p = image_tag 'top/about-1.png'
+            h4 サークル設立
+          p
+            | サークルを設立しましょう。
+            br
+            | すでに活動しているサークルを登録することも、新しいサークルを作成することもできます。
+
+        .col-4.col-md-4
+          .image
+            p = image_tag 'top/about-2.png'
+            h4 仲間を集める
+          p
+            | 仲間を集めましょう
+            br
+            | サークルへの勧誘ツールとして、またサークル内のコミュニケーションツールとして CiecleWave は活動をサポートします。
+
+        .col-4.col-md-4
+          .image
+            p = image_tag 'top/about-3.png'
+            h4 イベントを行う
+          p
+            | イベントを開催しましょう。
+            br
+            | CircleWaveからのイベント開催のための様々なサポートを受けることができます。
+
+  .content#friends
+    .container
+      h2 仲間を集めよう
+
+  .content#event
+    .container
+      h2 イベントを開催しよう
+
+  .content#gettingstart
+    .container
+      h2 はじめよう！
+      .image
+      p.startbutton
+        a.btn.btn-primary.btn-lg href="/dashboard.html" CircleWaveに参加する
+
+
+footer
+  .container
+    p.copyright &copy; whitehole
