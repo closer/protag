@@ -2,7 +2,7 @@
 
 header.navbar {
   background: white;
-  border-bottom: 3px solid #06f;
+  // border-bottom: 3px solid #06f;
 
   .navbar-brand {
     .circle {
@@ -23,15 +23,25 @@ header.navbar {
       height: 500px;
     }
 
-    &#top {
-      background-image: url(/images/top/3.jpg);
+    @media (max-width: 991px) {
+      height: 200px;
+    }
+
+    .background-para (@bg-url) {
+      background-image: @bg-url;
       background-size: cover;
       background-position: center 0px;
       background-repeat: no-repeat;
-      text-align: center;
-      .logo {
-        padding: 80px 0 50px;
-      }
+    }
+
+    &#top1 {
+      .background-para (image-url('mid/1.jpg'));
+    }
+    &#top2 {
+      .background-para (image-url('mid/3.jpg'));
+    }
+    &#top3 {
+      .background-para (image-url('mid/6.jpg'));
     }
     &#about {
       background: white;
@@ -43,14 +53,19 @@ header.navbar {
         }
       }
     }
-    &#friends {
-      background: #06f;
-      color: #fff;
+    &#top4 {
+      .background-para (image-url('mid/7.jpg'));
     }
-    &#event {
-      background: black;
-      color: #fff;
+    &#top5 {
+      .background-para (image-url('mid/8_iphone.jpg'));
     }
+    &#top6 {
+      .background-para (image-url('mid/5_iphone.jpg'));
+    }
+    &#top7 {
+      .background-para (image-url('mid/10.jpg'));
+    }
+
     &#gettingstart {
       background: white;
       .startbutton {

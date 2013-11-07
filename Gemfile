@@ -1,6 +1,6 @@
 # If you have OpenSSL installed, we recommend updating
 # the following line to use "https"
-source 'http://rubygems.org'
+source "http://rubygems.org"
 
 gem "middleman", "~>3.1.6"
 
@@ -15,6 +15,7 @@ platforms :mri_18 do
   gem "ruby18_source_location"
 end
 
-gem 'therubyracer'
-gem 'slim'
-gem 'less'
+gem "less", "~> 2.2.0"
+gem "therubyracer"
+gem "sprockets-less", require: false
+gem "slim"
