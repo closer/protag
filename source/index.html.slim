@@ -78,7 +78,9 @@ header.navbar.navbar-inverse.navbar-fixed-top role="banner"
       h2 はじめよう！
       .image
       p.startbutton
-        a.btn.btn-primary.btn-lg href="/dashboard.html" CAMPFIREで事前予約する
+        = link_to "", class: "btn btn-primary btn-lg" do
+          = image_tag "logo_renew.png", alt: "CAMPFIRE"
+          | で事前予約する
 
       h3 【よくある質問】
 
