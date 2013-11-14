@@ -35,7 +35,7 @@ require "sprockets-less"
 ###
 
 # Automatic image dimensions on image_tag helper
-# activate :automatic_image_sizes
+activate :automatic_image_sizes
 
 # Reload the browser automatically whenever files change
 activate :livereload
@@ -47,11 +47,11 @@ activate :livereload
 #   end
 # end
 
-set :css_dir, 'protag/stylesheets'
+set :css_dir, 'stylesheets'
 
-set :js_dir, 'protag/javascripts'
+set :js_dir, 'javascripts'
 
-set :images_dir, 'protag/images'
+set :images_dir, 'images'
 
 set :bower_dir, '../vendor/bower'
 
@@ -60,17 +60,17 @@ set :relative_links, true
 # Build-specific configuration
 configure :build do
   # For example, change the Compass output style for deployment
-  # activate :minify_css
+  activate :minify_css
 
   # Minify Javascript on build
-  # activate :minify_javascript
+  activate :minify_javascript
 
   # Enable cache buster
-  # activate :asset_hash
+  activate :asset_hash
 
   # Use relative URLs
   activate :relative_assets
 
   # Or use a different image path
-  # set :http_prefix, "/Content/images/"
+  set :http_prefix, "/protag"
 end

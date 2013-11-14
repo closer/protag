@@ -2,29 +2,20 @@
 title: hoge
 ---
 
-header.navbar.navbar-fixed-top role="banner"
-  .container
-    .navbar-header
-      = link_to "#top", class: "navbar-brand" do
-        span.circle Protag
-        span.wave Elite
-    / nav.collapse.navbar-collapse role="navigation"
-    /   ul.nav.navbar-nav
-    /     li = link_to "Protag Eliteとは?", "#about"
-    /     li = link_to "仲間を集めよう", "#friends"
-    /     li = link_to "イベントを開催しよう", "#event"
-    /     li = link_to "はじめよう", "#gettingstart"
+header.navbar.navbar-inverse.navbar-fixed-top role="banner"
+  .navbar-header
+    span.navbar-brand PROTAG Elite
 
 #wrap
 
   .content#top1.bg-para
-    .container
+    = image_tag 'mid/1.jpg', alt: ""
 
   .content#top2.bg-para
-    .container
+    = image_tag 'mid/3.jpg', alt: ""
 
   .content#top3.bg-para
-    .container
+    = image_tag 'mid/6.jpg', alt: ""
 
   .content#about.bg-para
     .container
@@ -32,44 +23,54 @@ header.navbar.navbar-fixed-top role="banner"
       p.lead
         | Protag Elite は、大学の枠をこえて、ウェブ上でサークル活動を運営できるサービスです。
       .row
-        .col-4.col-md-4
+        .col-4.col-sm-4
           .image
-            p = image_tag 'top/about-1.png'
-            h4 サークル設立
-          p
-            | サークルを設立しましょう。
-            br
-            | すでに活動しているサークルを登録することも、新しいサークルを作成することもできます。
+            p = image_tag 'find.png', alt: ""
+            h4 スマートレーダー
+          p あなたと持ち物の間の距離を測定。あなたの大切な持ち物をスマートフォンで簡単に発見します。
 
-        .col-4.col-md-4
+        .col-4.col-sm-4
           .image
-            p = image_tag 'top/about-2.png'
-            h4 仲間を集める
-          p
-            | 仲間を集めましょう
-            br
-            | サークルへの勧誘ツールとして、またサークル内のコミュニケーションツールとして CiecleWave は活動をサポートします。
+            p = image_tag 'set.png', alt: ""
+            h4 スマートアラート
+          p スマートアラート機能であなたの置き忘れを防止します。特定のエリアで鳴らないようにすることも可能です。
 
-        .col-4.col-md-4
+        .col-4.col-sm-4
           .image
-            p = image_tag 'top/about-3.png'
-            h4 イベントを行う
-          p
-            | イベントを開催しましょう。
-            br
-            | Protag Eliteからのイベント開催のための様々なサポートを受けることができます。
+            p = image_tag 'step.png', alt: ""
+            h4 GPSトラッキング
+          p あなたが持ち物を無くした場所を記録します。無くした場所がわかるのでもう落し物を探しまわる必要はありません。
+
+        .col-4.col-sm-4
+          .image
+            p = image_tag 'track.png', alt: ""
+            h4 クラウドトラッキング
+          p 持ち物が持ち去られてしまったときでも、別のユーザーが持ち物の近くを通りがかれば、持ち物の場所を捕捉してあなたにお知らせします。
+
+        .col-4.col-sm-4
+          .image
+            p = image_tag 'time.png', alt: ""
+            h4 モバイルセキュリティ
+          p スマートフォンを無くしたときには、サイトから遠隔ロックや位置情報の検索が可能です。
+
+        .col-4.col-sm-4
+          .image
+            p = image_tag 'smart.png', alt: ""
+            h4 スマートバッテリー
+          p １度の充電で１年間使えます。USB接続で繰り返し何度も充電して使えるので経済的です。
+
 
   .content#top4.bg-para
-    .container
+    = image_tag 'mid/7.jpg', alt: ""
 
   .content#top5.bg-para
-    .container
+    = image_tag 'mid/8_iphone.jpg', alt: ""
 
   .content#top6.bg-para
-    .container
+    = image_tag 'mid/5_iphone.jpg', alt: ""
 
   .content#top7.bg-para
-    .container
+    = image_tag 'mid/10.jpg', alt: ""
 
   .content#gettingstart.bg-para
     .container
@@ -78,52 +79,51 @@ header.navbar.navbar-fixed-top role="banner"
       p.startbutton
         a.btn.btn-primary.btn-lg href="/dashboard.html" CAMPFIREで事前予約する
 
-  .content#faq.bg-para
-    .container
-      h2 【よくある質問】
+      h3 【よくある質問】
 
-      h3 Q.対応OSは何ですか？
+      h4 Q.対応OSは何ですか？
       p
         | Bluetooth 4.0に対応したiOS機器
         | （iPhone:4S以降、iPad:第3世代以降、iPod touch:第5世代以降、iPad mini）
-
+        br
         | Bluetooth Low Energyに対応したAndroid 4.1以上の機器
-
+        br
+        br
         | 動作確認済み端末
         | Android v4.0.4
         | •    Motorola Droid Razr
-
+        br
         | Android v4.1
         | •    HTC One (M7)
-
+        br
         | •    HTC One X+
-
+        br
         | •    HTC Butterfly
-
+        br
         | •    HTC Droid DNA
-
+        br
+        br
         | Android v4.2
         | •    Samsung Galaxy S4
-
+        br
         | Android v4.3
         | •    Google Nexus 4
 
-      h3 Q製品が発送されるのはいつ頃ですか？
+      h4 Q製品が発送されるのはいつ頃ですか？
       p
         | 　1月中旬以降を予定しております。宅配便で日本国内より発送予定です。正確な発送日時が決まったらまたご連絡致します。
 
-      h3 Qアプリやウェブサイトは日本語化されますか？
+      h4 Qアプリやウェブサイトは日本語化されますか？
       p
         | 　今後のアップデートで日本語化予定です。また製品には日本語の説明書を添付致します。
 
-      h3 Qサポート体制はどのようになっていますか？
+      h4 Qサポート体制はどのようになっていますか？
       p
         | 　問い合わせ・不具合対応などの日本国内でのサポートにつきましては株式会社落し物ドットコムが行っております。
 
-      h3 Q.PROTAG Elite利用にあたって追加の費用などは発生しますか？
+      h4 Q.PROTAG Elite利用にあたって追加の費用などは発生しますか？
       p
         | 発生しません。PROTAG ELITEを購入すればオンラインサービスも含めてずっと使うことができます。
 
 footer
-  .container
-    p.copyright &copy; 落し物ドットコム
+  p.copyright &copy; 落し物ドットコム
