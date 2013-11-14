@@ -1,0 +1,14 @@
+language: ruby
+rvm:
+- 2.0.0
+- 1.9.3
+- jruby-19mode
+- rbx-19mode
+deploy:
+  provider: s3
+  access_key_id: AKIAIBD6L2JBW743RTFA
+  secret_access_key:
+    secure: Yhe39R7XGeTmv8g0D2HpPFy6MJ/hDD5EoS8jG/QwTAdFl552XDVWNReO0vcyI34Id8IVq7dVWSp5ZubN5+C3KQd9jTlOzxsq4xT+tTaDIGssWf7jbuhxqNnf8Yw9vm05jGUQAf4dSwpnxi7qNYkcVkFS2hKrWtsGnBDWBQmaUqY=
+  bucket: protag-staging
+  on:
+    repo: closer/protag
