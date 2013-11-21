@@ -71,6 +71,10 @@ configure :build do
   # Use relative URLs
   activate :relative_assets
 
+  activate :google_analytics do |ga|
+    ga.tracking_id = "UA-33978950-3"
+  end
+
   # Or use a different image path
   # set :http_prefix, "/protag"
 end
