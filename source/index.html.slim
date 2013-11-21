@@ -5,6 +5,11 @@ title: PROTAG Elite
 header.navbar.navbar-inverse.navbar-fixed-top role="banner"
   .navbar-header
     span.navbar-brand PROTAG Elite
+  nav.collapse.navbar-collapse.bs-navbar-collapse.pull-right role="navigation"
+    ul.nav.navbar-nav
+      li = link_to "特長", "#about"
+      li = link_to "お問い合わせ", "https://otoshimono.wufoo.com/forms/protag-eliteaeaaaaaa/"
+      li = link_to "ログイン", "http://innovatechnology.com.sg/homepage/login"
 
 #wrap
 
@@ -22,7 +27,7 @@ header.navbar.navbar-inverse.navbar-fixed-top role="banner"
 
   .content#about.bg-para
     .container
-      h2 Protag Elite とは？
+      h2 特長
       .row
         .col-4.col-sm-4
           .image
@@ -75,12 +80,16 @@ header.navbar.navbar-inverse.navbar-fixed-top role="banner"
 
   .content#gettingstart
     .container
-      h2 はじめよう！
-      .image
       p.startbutton
-        = link_to "", class: "btn btn-primary btn-lg" do
+        = link_to "http://camp-fire.jp/projects/view/853", class: "btn btn-primary btn-lg" do
           = image_tag "logo_renew.png", alt: "CAMPFIRE"
-          | で事前予約する
+          span で事前予約する
+
+      .socialbutton
+        div class="fb-like" data-href="https://protag.otoshimono.com/" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"
+        span.spacer 　
+        a href="https://twitter.com/share" class="twitter-share-button" data-lang="ja" ツイート
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 
       h3 【よくある質問】
 
@@ -129,4 +138,7 @@ header.navbar.navbar-inverse.navbar-fixed-top role="banner"
         | 発生しません。PROTAG ELITEを購入すればオンラインサービスも含めてずっと使うことができます。
 
 footer
-  p.copyright &copy; 落し物ドットコム
+  p.copyright
+    | © 2013 Innova Technology LLC. All Rights Reserved. International Patent Pending
+    br
+    | © 2013 OTOSHIMONO.COM INC
