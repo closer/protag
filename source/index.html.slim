@@ -81,7 +81,7 @@ header.navbar.navbar-inverse.navbar-fixed-top role="banner"
   .content#gettingstart
     .container
       p.startbutton
-        = link_to "http://camp-fire.jp/projects/view/853", class: "btn btn-primary btn-lg" do
+        = link_to "http://camp-fire.jp/projects/view/853", class: "btn btn-primary btn-lg", onclick: "_gaq.push(['_trackEvent', 'campfire', 'click'])" do
           = image_tag "logo_renew.png", alt: "CAMPFIRE"
           span で事前予約する
 
