@@ -2,16 +2,9 @@ language: ruby
 rvm:
 - 2.0.0
 before_script:
-- "npm install bower"
-- "bower install"
-script: "bundle exec middleman build"
-before_deploy: "cd build"
-deploy:
-  provider: s3
-  access_key_id: AKIAIBD6L2JBW743RTFA
-  skip_cleanup: true
-  secret_access_key:
-    secure: Yhe39R7XGeTmv8g0D2HpPFy6MJ/hDD5EoS8jG/QwTAdFl552XDVWNReO0vcyI34Id8IVq7dVWSp5ZubN5+C3KQd9jTlOzxsq4xT+tTaDIGssWf7jbuhxqNnf8Yw9vm05jGUQAf4dSwpnxi7qNYkcVkFS2hKrWtsGnBDWBQmaUqY=
-  bucket: protag-staging
-  on:
-    repo: closer/protag
+- npm install bower
+- bower install
+script: bundle exec middleman build
+after_script: bundle exec middleman s3_sync --force
+env:
+  secure: dkT3atT9G1zFjlTwxkK9ymYJ9cf3BjsiuBa8URGtCeXzwCJ8M4pjDfT/0PxjLSrD8oYm6riM757TFdwcsCoGn46fZkWHgJnP+3AODMh/iwTeNLE3QoIEFhW4Oljyz8ogUQfjNsmNu5ev6cixcEZVa+IFchsq4lgTKaG8j+h6LHs=
