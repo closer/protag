@@ -2,6 +2,8 @@ box: wercker/ruby
 build:
   steps:
     - bundle-install
+    - npm-install
+    - bower-install
     - script:
         name: build
         code: bundle exec middleman build
