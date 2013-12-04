@@ -5,12 +5,12 @@ build:
     - npm-install
     - plasticine/bower-install
     - script:
-        name: build
-        code: bundle exec middleman build
+        name: middleman build
+        code: bundle exec middleman build --verbose
 deploy:
   steps:
     - s3sync:
         key_id: $AWS_ACCESS_KEY_ID
         key_secret: $AWS_SECRET_ACCESS_KEY
-        bucket_url: protag.otoshimono.com
+        bucket_url: s3://protag.otoshimono.com
         source_dir: build/
