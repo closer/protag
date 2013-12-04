@@ -9,6 +9,7 @@ build:
         code: bundle exec middleman build
 deploy:
   steps:
+    - bundle-install
     - script:
         name: S3 Sync
         code: bundle exec middleman s3_sync --force
