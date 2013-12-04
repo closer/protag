@@ -1,4 +1,4 @@
-box: wercker/ruby
+box: aussiegeek/ubuntu12.04-ruby2.0-nodejs0.10@0.0.1
 build:
   steps:
     - bundle-install
