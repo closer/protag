@@ -1,8 +1,8 @@
 box: wercker/ruby
-  build:
-    steps:
-      - bundle-install
-      - script: bundle exec middleman build
-  deploy:
-    steps:
-      - script: bundle exec middleman s3_sync --force
+build:
+  steps:
+    - bundle-install
+    - script: bundle exec middleman build
+deploy:
+  steps:
+    - script: bundle exec middleman s3_sync --force
