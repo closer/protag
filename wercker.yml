@@ -9,7 +9,8 @@ build:
         code: bundle exec middleman build
 deploy:
   steps:
-    - bundle-install
-    - script:
-        name: S3 Sync
-        code: bundle exec middleman s3_sync --force
+    - s3sync:
+        key_id: $AWS_ACCESS_KEY_ID
+        key_secret: $AWS_SECRET_ACCESS_KEY
+        bucket_url: $AWS_BUCKET_URL
+        source_dir: build/
