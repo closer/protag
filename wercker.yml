@@ -3,7 +3,7 @@ build:
   steps:
     - bundle-install
     - npm-install
-    - bower-install
+    - plasticine/bower-install
     - script:
         name: build
         code: bundle exec middleman build
