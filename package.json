@@ -1,0 +1,9 @@
+{
+  "name": "protag",
+  "version": "0.0.1",
+  "description": "",
+  "dependencies": {
+    "bower": "~1.2.8"
+  },
+  "author": "otoshimono.com"
+}
