@@ -2,7 +2,6 @@ box: wercker/ruby
 build:
   steps:
     - bundle-install
-    - npm-install
     - plasticine/bower-install
     - script:
         name: build
