@@ -14,6 +14,13 @@ set :bower_dir, '../vendor/bower'
 
 set :relative_links, true
 
+configure :development do
+  activate :google_analytics do |ga|
+    ga.tracking_id = false
+  end
+end
+
+
 configure :build do
   activate :minify_css
 
