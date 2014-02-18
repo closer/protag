@@ -1,4 +1,4 @@
-#= require jquery
+#= require jquery/dist/jquery
 #= require bootstrap
 #= require jquery.smoothscroll
 #= require_tree .

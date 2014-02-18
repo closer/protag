@@ -4,8 +4,6 @@ activate :automatic_image_sizes
 
 activate :livereload
 
-activate :bower
-
 activate :blog do |blog|
   blog.prefix = "blog"
   blog.layout = :blog_layout
@@ -14,6 +12,10 @@ end
 set :css_dir, 'stylesheets'
 
 set :js_dir, 'javascripts'
+
+ready do
+  sprockets.append_path File.join root, 'vendor/assets/bower'
+end
 
 set :images_dir, 'images'
 
