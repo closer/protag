@@ -1,6 +1,6 @@
 {
-  "name": "circlewave",
-  "version": "0.0.0",
+  "name": "protag",
+  "version": "0.0.1",
   "dependencies": {
     "jquery": ">= 0.0.0",
     "bootstrap": ">= 3.0.0"
