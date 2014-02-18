@@ -17,7 +17,7 @@ platforms :mri_18 do
   gem "ruby18_source_location"
 end
 
-gem "less", "~> 2.2.0"
+gem "less", "~> 2.5.0"
 gem "therubyracer"
 gem "sprockets-less", require: false
 gem "slim"
