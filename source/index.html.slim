@@ -133,6 +133,10 @@ header.navbar.navbar-inverse.navbar-fixed-top role="banner"
       p
         | 発生しません。PROTAG ELITEを購入すればオンラインサービスも含めてずっと使うことができます。
 
+ul
+  - blog.articles.each do |article|
+    li = link_to article.title, article.url
+
 footer
   p.copyright
     | © 2013 Innova Technology LLC. All Rights Reserved. International Patent Pending

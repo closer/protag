@@ -5,11 +5,8 @@ activate :automatic_image_sizes
 activate :livereload
 
 activate :blog do |blog|
-  blog.prefix = "blog"
+  blog.prefix ="blog"
 end
-
-set :markdown, :tables => true, :autolink => true, :gh_blockcode => true, :fenced_code_blocks => true, :with_toc_data => true
-set :markdown_engine, :redcarpet
 
 set :css_dir, 'stylesheets'
 
@@ -29,15 +26,11 @@ end
 
 
 configure :build do
-  activate :cache_buster
-
   activate :minify_css
+
   activate :minify_javascript
-  activate :gzip
 
   activate :asset_hash
-
-  activate :automatic_alt_tags
 
   activate :relative_assets
 

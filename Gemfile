@@ -23,4 +23,3 @@ gem "less", "~> 2.5.0"
 gem "therubyracer"
 gem "sprockets-less", require: false
 gem "slim"
-gem "redcarpet"
