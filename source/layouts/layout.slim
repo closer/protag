@@ -1,0 +1,30 @@
+doctype html
+html
+  head
+    meta charset="utf-8"
+    meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"
+    title = current_page.data.title || "CircleWave"
+    = stylesheet_link_tag "all"
+    = javascript_include_tag  "all"
+  #fb-root
+  script
+    | (function(d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = "//connect.facebook.net/ja_JP/all.js#xfbml=1&appId=1389419067948117"; fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'facebook-jssdk'));
+  body class=page_classes
+    header.navbar.navbar-inverse.navbar-fixed-top role="banner"
+      .navbar-header
+        span.navbar-brand = link_to 'PROTAG Elite', '/'
+      nav.collapse.navbar-collapse.bs-navbar-collapse.pull-right role="navigation"
+        ul.nav.navbar-nav
+          li = link_to "特長", "#about"
+          li = link_to "お問い合わせ", "https://otoshimono.wufoo.com/forms/protag-eliteaeaaaaaa/"
+          li = link_to "ログイン", "http://innovatechnology.com.sg/homepage/login"
+
+    #wrap
+      = yield
+
+    footer
+      p.copyright
+        | © 2013 Innova Technology LLC. All Rights Reserved. International Patent Pending
+        br
+        | © 2013 OTOSHIMONO.COM INC
+    = google_analytics_tag

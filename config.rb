@@ -5,7 +5,8 @@ activate :automatic_image_sizes
 activate :livereload
 
 activate :blog do |blog|
-  blog.prefix ="blog"
+  blog.prefix = "blog"
+  blog.layout = :blog_layout
 end
 
 set :css_dir, 'stylesheets'
