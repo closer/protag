@@ -1,9 +1,7 @@
-box: wercker/rvm
+box: plasticine/aerobic.io@0.0.7
 build:
   steps:
     - bundle-install
-    - 1syo/nodebrew-use@0.0.2:
-        version: v0.10.x
     - npm-install
     - plasticine/bower-install
     - script:
