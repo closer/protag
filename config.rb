@@ -4,6 +4,8 @@ activate :automatic_image_sizes
 
 activate :livereload
 
+activate :bower
+
 activate :blog do |blog|
   blog.prefix = "blog"
   blog.layout = :blog_layout
@@ -14,8 +16,6 @@ set :css_dir, 'stylesheets'
 set :js_dir, 'javascripts'
 
 set :images_dir, 'images'
-
-set :bower_dir, '../vendor/bower'
 
 set :relative_links, true
 

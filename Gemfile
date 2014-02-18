@@ -12,6 +12,8 @@ gem "slim"
 # Live-reloading plugin
 gem "middleman-livereload", "~> 3.1.0"
 
+gem 'middleman-bower'
+
 gem "middleman-blog"
 
 gem "middleman-google-analytics"
