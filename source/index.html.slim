@@ -2,139 +2,128 @@
 title: PROTAG Elite
 ---
 
-header.navbar.navbar-inverse.navbar-fixed-top role="banner"
-  .navbar-header
-    span.navbar-brand PROTAG Elite
-  nav.collapse.navbar-collapse.bs-navbar-collapse.pull-right role="navigation"
-    ul.nav.navbar-nav
-      li = link_to "特長", "#about"
-      li = link_to "お問い合わせ", "https://otoshimono.wufoo.com/forms/protag-eliteaeaaaaaa/"
-      li = link_to "ログイン", "http://innovatechnology.com.sg/homepage/login"
+.content#top1.bg-para
+  = image_tag 'mid/1.jpg', alt: ""
 
-#wrap
+.content#top2.bg-para
+  = image_tag 'mid/3.jpg', alt: ""
 
-  .content#top1.bg-para
-    = image_tag 'mid/1.jpg', alt: ""
+.content#top3.bg-para
+  = image_tag 'mid/6.jpg', alt: ""
 
-  .content#top2.bg-para
-    = image_tag 'mid/3.jpg', alt: ""
+.content#top4.bg-para
+  = image_tag 'mid/wallet.jpg', alt: ""
 
-  .content#top3.bg-para
-    = image_tag 'mid/6.jpg', alt: ""
+.content#about.bg-para
+  .container
+    h2 特長
+    .row
+      .col-4.col-sm-4
+        .image
+          p = image_tag 'find.png', alt: ""
+          h4 スマートレーダー
+        p あなたと持ち物の間の距離を測定。あなたの大切な持ち物をスマートフォンで簡単に発見します。
 
-  .content#top4.bg-para
-    = image_tag 'mid/wallet.jpg', alt: ""
+      .col-4.col-sm-4
+        .image
+          p = image_tag 'set.png', alt: ""
+          h4 スマートアラート
+        p スマートアラート機能であなたの置き忘れを防止します。特定のエリアで鳴らないようにすることも可能です。
 
-  .content#about.bg-para
-    .container
-      h2 特長
-      .row
-        .col-4.col-sm-4
-          .image
-            p = image_tag 'find.png', alt: ""
-            h4 スマートレーダー
-          p あなたと持ち物の間の距離を測定。あなたの大切な持ち物をスマートフォンで簡単に発見します。
+      .col-4.col-sm-4
+        .image
+          p = image_tag 'step.png', alt: ""
+          h4 GPSトラッキング
+        p あなたが持ち物を無くした場所を記録します。無くした場所がわかるのでもう落し物を探しまわる必要はありません。
 
-        .col-4.col-sm-4
-          .image
-            p = image_tag 'set.png', alt: ""
-            h4 スマートアラート
-          p スマートアラート機能であなたの置き忘れを防止します。特定のエリアで鳴らないようにすることも可能です。
+      .col-4.col-sm-4
+        .image
+          p = image_tag 'track.png', alt: ""
+          h4 クラウドトラッキング
+        p 持ち物が持ち去られてしまったときでも、別のユーザーが持ち物の近くを通りがかれば、持ち物の場所を捕捉してあなたにお知らせします。
 
-        .col-4.col-sm-4
-          .image
-            p = image_tag 'step.png', alt: ""
-            h4 GPSトラッキング
-          p あなたが持ち物を無くした場所を記録します。無くした場所がわかるのでもう落し物を探しまわる必要はありません。
+      .col-4.col-sm-4
+        .image
+          p = image_tag 'time.png', alt: ""
+          h4 モバイルセキュリティ
+        p スマートフォンを無くしたときには、サイトから遠隔ロックや位置情報の検索が可能です。
 
-        .col-4.col-sm-4
-          .image
-            p = image_tag 'track.png', alt: ""
-            h4 クラウドトラッキング
-          p 持ち物が持ち去られてしまったときでも、別のユーザーが持ち物の近くを通りがかれば、持ち物の場所を捕捉してあなたにお知らせします。
-
-        .col-4.col-sm-4
-          .image
-            p = image_tag 'time.png', alt: ""
-            h4 モバイルセキュリティ
-          p スマートフォンを無くしたときには、サイトから遠隔ロックや位置情報の検索が可能です。
-
-        .col-4.col-sm-4
-          .image
-            p = image_tag 'smart.png', alt: ""
-            h4 スマートバッテリー
-          p １度の充電で１年間使えます。USB接続で繰り返し何度も充電して使えるので経済的です。
+      .col-4.col-sm-4
+        .image
+          p = image_tag 'smart.png', alt: ""
+          h4 スマートバッテリー
+        p １度の充電で１年間使えます。USB接続で繰り返し何度も充電して使えるので経済的です。
 
 
-  .content#top5.bg-para
-    = image_tag 'mid/7.jpg', alt: ""
+.content#top5.bg-para
+  = image_tag 'mid/7.jpg', alt: ""
 
-  .content#top6.bg-para
-    = image_tag 'mid/8_iphone.jpg', alt: ""
+.content#top6.bg-para
+  = image_tag 'mid/8_iphone.jpg', alt: ""
 
-  .content#top7.bg-para
-    = image_tag 'mid/5_iphone.jpg', alt: ""
+.content#top7.bg-para
+  = image_tag 'mid/5_iphone.jpg', alt: ""
 
-  .content#top8.bg-para
-    = image_tag 'mid/10.jpg', alt: ""
+.content#top8.bg-para
+  = image_tag 'mid/10.jpg', alt: ""
 
-  .content#gettingstart
-    .container
+.content#gettingstart
+  .container
 
-      p.startbutton
-        iframe width="640" height="360" src="//www.youtube.com/embed/1C9hoTnoNdw?rel=0" frameborder="0" allowfullscreen
-        br
-        br
-        = link_to "https://protag.stores.jp/#!/", class: "btn btn-primary btn-lg", onclick: "_gaq.push(['_trackEvent', 'campfire', 'click'])" do
-          span 公式ストアで購入する
-        br
-        | ※購入前に対応端末をご確認ください。
+    p.startbutton
+      iframe width="640" height="360" src="//www.youtube.com/embed/1C9hoTnoNdw?rel=0" frameborder="0" allowfullscreen
+      br
+      br
+      = link_to "https://protag.stores.jp/#!/", class: "btn btn-primary btn-lg", onclick: "_gaq.push(['_trackEvent', 'campfire', 'click'])" do
+        span 公式ストアで購入する
+      br
+      | ※購入前に対応端末をご確認ください。
 
-      .socialbutton
-        div class="fb-like" data-href="https://protag.otoshimono.com/" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"
-        span.spacer 　
-        a href="https://twitter.com/share" class="twitter-share-button" data-lang="ja" ツイート
-        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+    .socialbutton
+      div class="fb-like" data-href="https://protag.otoshimono.com/" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"
+      span.spacer 　
+      a href="https://twitter.com/share" class="twitter-share-button" data-lang="ja" ツイート
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 
-      h3 【よくある質問】
+    h3 【よくある質問】
 
-      h4 Q.対応OSは何ですか？
-      p
-        | Bluetooth 4.0に対応したiOS機器（iPhone:4S以降、iPad:第3世代以降、iPod touch:第5世代以降、iPad mini）
-        br
-        | Bluetooth Low Energyに対応したAndroid 4.3以上の機器
-        br
-        br
-        | 動作確認済み端末Android
-        br
-        | v4.0.4• Motorola Droid Razr
-        br
-        | Android v4.1• HTC One (M7)
-        br
-        | • HTC One X+
-        br
-        | • HTC Butterfly
-        br
-        | • HTC Droid DNA
-        br
-        | Android v4.2• Samsung Galaxy S4
-        br
-        | Android v4.3• Google Nexus 4
+    h4 Q.対応OSは何ですか？
+    p
+      | Bluetooth 4.0に対応したiOS機器（iPhone:4S以降、iPad:第3世代以降、iPod touch:第5世代以降、iPad mini）
+      br
+      | Bluetooth Low Energyに対応したAndroid 4.3以上の機器
+      br
+      br
+      | 動作確認済み端末Android
+      br
+      | v4.0.4• Motorola Droid Razr
+      br
+      | Android v4.1• HTC One (M7)
+      br
+      | • HTC One X+
+      br
+      | • HTC Butterfly
+      br
+      | • HTC Droid DNA
+      br
+      | Android v4.2• Samsung Galaxy S4
+      br
+      | Android v4.3• Google Nexus 4
 
-      h4 Qアプリやウェブサイトは日本語化されますか？
-      p
-        | 　今後のアップデートで日本語化予定です。また製品には日本語の説明書を添付致します。
+    h4 Qアプリやウェブサイトは日本語化されますか？
+    p
+      | 　今後のアップデートで日本語化予定です。また製品には日本語の説明書を添付致します。
 
-      h4 Qサポート体制はどのようになっていますか？
-      p
-        | 　問い合わせ・不具合対応などの日本国内でのサポートにつきましては株式会社落し物ドットコムが行っております。
+    h4 Qサポート体制はどのようになっていますか？
+    p
+      | 　問い合わせ・不具合対応などの日本国内でのサポートにつきましては株式会社落し物ドットコムが行っております。
 
-      h4 Q.PROTAG Elite利用にあたって追加の費用などは発生しますか？
-      p
-        | 発生しません。PROTAG ELITEを購入すればオンラインサービスも含めてずっと使うことができます。
+    h4 Q.PROTAG Elite利用にあたって追加の費用などは発生しますか？
+    p
+      | 発生しません。PROTAG ELITEを購入すればオンラインサービスも含めてずっと使うことができます。
 
-footer
-  p.copyright
-    | © 2013 Innova Technology LLC. All Rights Reserved. International Patent Pending
-    br
-    | © 2013 OTOSHIMONO.COM INC
+.content#blog
+  .container
+    ul
+      - blog.articles.each do |article|
+        li = link_to article.title, article.url
