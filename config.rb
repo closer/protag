@@ -29,13 +29,13 @@ end
 
 
 configure :build do
-  activate :minify_css
+  # activate :minify_css
 
-  activate :minify_javascript
+  # activate :minify_javascript
 
   activate :asset_hash
 
-  activate :relative_assets
+  # activate :relative_assets
 
   activate :google_analytics do |ga|
     ga.tracking_id = "UA-33978950-3"
