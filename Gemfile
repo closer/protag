@@ -9,6 +9,8 @@ gem "therubyracer"
 gem "sprockets-less", require: false
 gem "slim"
 
+gem 'middleman-bower'
+
 # Live-reloading plugin
 gem "middleman-livereload", "~> 3.1.0"
 

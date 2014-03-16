@@ -13,9 +13,11 @@ set :css_dir, 'stylesheets'
 
 set :js_dir, 'javascripts'
 
-ready do
-  sprockets.append_path File.join root, 'vendor/assets/bower'
-end
+activate :bower
+
+# ready do
+#   sprockets.append_path File.join root, 'vendor/assets/bower'
+# end
 
 set :images_dir, 'images'
 
