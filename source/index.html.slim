@@ -122,8 +122,9 @@ title: PROTAG Elite
     p
       | 発生しません。PROTAG ELITEを購入すればオンラインサービスも含めてずっと使うことができます。
 
-//.content#blog
+.content#blog
   .container
+    h2 最新情報
     ul
       - blog.articles.each do |article|
         li = link_to article.title, article.url
